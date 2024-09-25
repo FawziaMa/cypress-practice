@@ -7,14 +7,5 @@ jobs:
       - name: Checkout 🛎
         uses: actions/checkout@v2
 
-      - name: Install dependencies 📦
-        run: npm ci
-
-      - name: Build the app 🏗
-        run: npm run build
-
-      - name: Start the app 📤
-        run: npm start &
-
       - name: Run Cypress tests 🧪
-        run: npm run cy:run
+        run: npx run cy:run
