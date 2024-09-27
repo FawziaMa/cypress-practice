@@ -11,7 +11,7 @@ jobs:
         run: yarn install
 
       - name: Cypress run
-        run: cypress run --spec 'cypress/integration/advanced/cyget.spec.js'
+        run: npx cypress run --spec 'cypress/integration/advanced/cyget.spec.js'
 
 
 
