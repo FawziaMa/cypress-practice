@@ -14,7 +14,7 @@ jobs:
       # and run all Cypress tests
       - name: Cypress run
         uses: cypress-io/github-action@v6
-        run: npx cypress run --spec 'cypress/integration/advanced/cyget.spec.js'
+        run: cypress run --spec 'cypress/integration/advanced/cyget.spec.js'
         working-directory: ./cypress-practice
 
 
