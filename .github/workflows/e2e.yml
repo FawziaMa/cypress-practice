@@ -10,10 +10,8 @@ jobs:
       - name: Install Dependencies
         run: yarn install
 
-      # Install npm dependencies, cache them correctly
-      # and run all Cypress tests
       - name: Cypress run
         run: cypress run --spec 'cypress/integration/advanced/cyget.spec.js'
-        working-directory: ./cypress-practice
+
 
 
