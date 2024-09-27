@@ -12,9 +12,8 @@ jobs:
 
       # Install npm dependencies, cache them correctly
       # and run all Cypress tests
-      - name: Cypress run
-        uses: cypress-io/github-action@v6
 
       - name: Run specific Cypress tests
+        uses: cypress-io/github-action@v6
         run: npx cypress run --spec 'cypress/integration/advanced/cyget.spec.js'
         working-directory: ./cypress-practice
